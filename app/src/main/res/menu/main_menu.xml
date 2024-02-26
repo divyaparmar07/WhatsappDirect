@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="1"
+        android:title="Share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_share_24"
+        />
+
+    <item
+        android:id="@+id/setting"
+        android:orderInCategory="1"
+        android:title="Settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:orderInCategory="2"
+        android:title="Privacy Policy"/>
+
+    <item
+        android:id="@+id/disclaimer"
+        android:orderInCategory="2"
+        android:title="Disclaimer"/>
+
+    <item
+        android:id="@+id/terms_and_condition"
+        android:orderInCategory="2"
+        android:title="Terms and Condition"/>
+
+    <item
+        android:id="@+id/other_apps"
+        android:orderInCategory="2"
+        android:title="Other Apps"/>
+</menu>

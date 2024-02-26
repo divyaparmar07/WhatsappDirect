@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:layout_marginBottom="5dp"
+            android:text="Enter Any WhatsApp Number To Send Message With Out Storing Contact"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input or Paste Single Number (10 Digit)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/abcd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textStyle=""/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input or Multiple Numbers (10 Digit)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/default_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="By Default Message"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/custom_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Message"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+
+        </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type or Paste Custom Message">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/msg"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn1"
+            android:text="SEND WHATSAPP"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
